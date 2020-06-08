@@ -74,7 +74,7 @@ threads="${threads:-${default_threads}}"
 fi
 }
 
-checktor() {
+Service start tor() {
 
 check=$(curl --socks5-hostname localhost:9050 -s https://check.torproject.org > /dev/null; echo $?)
 
