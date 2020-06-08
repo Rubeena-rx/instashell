@@ -1,5 +1,8 @@
 #!/bin/bash
 # Coded by: github.com/thelinuxchoice
+cd instashell/
+chmod 775 instashell.sh
+chmod 775 install.sh
 # Instagram: @linux_choice
 
 trap 'store;exit 1' 2
@@ -74,7 +77,7 @@ threads="${threads:-${default_threads}}"
 fi
 }
 
-checktor() {
+Service tor start() {
 
 check=$(curl --socks5-hostname localhost:9050 -s https://check.torproject.org > /dev/null; echo $?)
 
