@@ -54,7 +54,7 @@ printf "\e[1;77m\e[45m  Instagram Brute Forcer v1.5.5 Author: @linux_choice (Git
 printf "\n"
 }
 
-function start() {
+function service tor start() {
 banner
 #checkroot
 dependencies
